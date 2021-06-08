@@ -1,3 +1,5 @@
+//CODE BY AJITH V ANIL
+//https://www.youtube.com/c/thebackyardelectricks
 #include <Servo.h> 
 Servo servo1; 
 const int flexpin = A0; 
