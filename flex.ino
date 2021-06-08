@@ -3,7 +3,7 @@ Servo servo1;
 const int flexpin = A0; 
 void setup () 
 { 
- Serial.begin(115200); 
+ Serial.begin(9600); 
  servo1.attach(9); 
 } 
 void loop () 
@@ -12,7 +12,7 @@ void loop ()
  flexposition = analogRead(flexpin);
  Serial.print("sensor: "); 
  Serial.print(flexposition); 
- if (flexposition > 800)
+ if (flexposition > 800)// you can change this value according to your sensor reading
  {
   servo1.write(0);
   Serial.print(" servo:"); 
